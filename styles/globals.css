@@ -1,0 +1,350 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif; /* Fuente predeterminada para todo el documento */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0B1020;
+    color: #ffffff;
+}
+
+header {
+    display: flex;  /* Use flexbox for layout */
+    flex-direction: row; /* Arrange items in a row */
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between; /* Alineación en el eje x */
+    align-items: center; /* Alineación en el eje y */
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+
+    img.logo {
+        width: 200px; /* Ajusta la altura del logo */
+    }
+
+    .div-burguer {
+        display: flex; /* Use flexbox for layout */
+        flex-direction: row; /* Arrange items in a row */
+        align-items: center; /* Alineación en el eje y */
+    }
+
+    nav {
+        a {
+            color: #9AA4BF;
+            text-decoration: none;  /* Elimina el subrayado de los enlaces */
+            margin: 15px;
+            transition: color 0.3s ease;
+            font-size: 1.15rem; /* Tamaño de fuente */
+            display: inline-block; /* Asegura que los enlaces se comporten como elementos en línea */
+
+            &:hover {
+                color: #007bff; /* Cambia el color al pasar el mouse */
+            }
+
+        }
+    }
+}
+
+aside {
+    position: fixed;
+    height: 100vh;
+    width: 350px;
+    background: #151b2e;
+    top: 0;
+    left: 0;
+
+
+    nav {
+
+        a {
+            color: #9AA4BF;
+            font-size: 1.15rem; /* Tamaño de fuente */
+
+        }
+    }
+}
+
+.btn-base{
+     border-radius: 4px; /* Bordes redondeados */
+     font-weight: 700; /* Texto en negrita */
+     color: #ffffff; /* Color del texto blanco */
+     font-size: 1.15rem; /* Tamaño de fuente */
+     padding: 15px 30px; /* Espaciado interno */
+    
+}
+
+.btn-emphasys {
+    background-color: #6C5CE7; /* Color de fondo azul */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+
+    &:hover {
+        background-color: #0056b3; /* Cambia el color al pasar el mouse */
+    }
+}
+
+.btn-secondary {
+    background-color: transparent; /* Color de fondo transparente */
+    border: 1px solid #9AA4BF; /* Borde */
+    padding: 15px 30px; /* Espaciado interno */
+    
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el color de fondo y el color del texto */
+
+    &:hover {
+        background-color: #6C5CE7; /* Cambia el color de fondo al pasar el mouse */
+        color: #ffffff; /* Cambia el color del texto al pasar el mouse */
+    }
+}
+
+.btn-burger {
+    width: 45px; /* Ancho del botón */
+    height: 45px; /* Altura del botón */
+    background: none; /* Fondo transparente */
+    border: 1px solid #9AA4BF; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
+    display: none; /* Usa flexbox para el botón */
+    
+   
+
+    span {
+
+        width: 30px; /* Ancho de las líneas del botón */
+        height: 3px; /* Altura de las líneas del botón */
+        background-color: #9AA4BF; /* Color de las líneas del botón */
+    }
+}
+
+.emphasys {
+    color: #22D3A6; /* Color azul para el texto */
+    font-weight: 700; /* Texto en negrita */
+}
+
+.hero-section {
+    
+    padding: 100px 20px; /* Espaciado interno */
+    display: flex; /* Usa flexbox para la sección */
+    flex-direction: row; /* Dirección de los elementos en línea */
+    flex-wrap: nowrap; /* No permite que los elementos se ajusten a la siguiente línea */
+    gap: 20px; /* Espacio entre los elementos */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Alinea los elementos verticalmente */
+   
+    h1 {
+        font-size: 3rem; /* Tamaño de fuente */
+        color: #ffffff; /* Color del texto */
+        margin-bottom: 20px; /* Espaciado inferior */
+    }
+
+    p {
+        font-size: 1.25rem; /* Tamaño de fuente */
+        color: #9AA4BF; /* Color del texto */
+        margin-bottom: 20px; /* Espaciado inferior */
+    }
+
+    .btn-group {
+        display: flex; /* Usa flexbox para los botones */
+        justify-content: star; /* Centra los botones horizontalmente */
+        gap: 10px; /* Espacio entre los botones */
+        margin-top: 30px; /* Espaciado superior */
+    }
+    .version {
+        color: #22D3A6; /* Color verde para la versión */
+        text-align: start; /* Alinea el texto a la izquierda */
+        background-color: rgba(34, 211, 166, 0.3); /* Fondo verde con transparencia */
+        padding: 5px 10px; /* Espaciado interno */
+        border-radius: 10px; /* Bordes redondeados */
+        font-weight: 500; /* Texto en negrita */
+    }
+}
+
+.checklist {
+    background: #151B2E; /* Fondo oscuro */
+    border: 1px solid #9AA4BF; /* Borde gris */
+    border-radius: 15px; /* Bordes redondeados */
+    width: 400px; /* Ancho */
+    padding: 25px; /* Espaciado interno */
+
+    .checklist-todo {
+        div {
+            background: #0B1020; /* Fondo verde */
+        padding: 5px; /* Espaciado interno */
+        border-radius: 10px; /* Bordes redondeados */
+        margin: 10px 0; /* Margen superior e inferior */
+        }
+
+    }
+}
+
+.metrics-section {
+    display: flex; /* Usa flexbox para la sección de métricas */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea */
+    gap: 15px; /* Espacio entre los elementos */
+    justify-content: space-around; /* Distribuye el espacio entre los elementos */
+    border-top: 1px solid #1f242f; /* Borde superior */
+    border-bottom: 1px solid #1f242f; /* Borde inferior */
+    padding: 40px 0px; /* Espaciado interno */
+
+}
+
+.metric {
+    strong {
+        font-size: 2em; /* Tamaño de fuente */
+    }
+
+    span {
+        font-size: 1.2em; /* Tamaño de fuente */
+        color: #9aa4bf; /* Color del texto */
+    }
+
+    display: flex; /* Usa flexbox para los artículos */
+    flex-direction: column; /* Dirección de los elementos en columna */
+    align-items: center; /* Alinea los elementos al centro */
+}
+
+.features-section {
+    padding: 100px 20px; /* Espaciado interno */
+    h2 {
+        font-size: 2rem; /* Tamaño de fuente */
+        color: #ffffff; /* Color del texto */
+        margin-bottom: 20px; /* Espaciado inferior */
+        text-align: center; /* Alinea el texto al centro */
+    }
+
+    nav {
+        display: flex; /* Usa flexbox para la sección de características */
+        flex-direction: row; /* Dirección de los elementos en fila */
+        flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea */
+        gap: 20px; /* Espacio entre los elementos */
+        justify-content: space-around; /* Distribuye el espacio entre los elementos */
+        align-items: center; /* Alinea los elementos al centro */
+        padding: 40px 0px; /* Espaciado interno */
+    }
+
+    article {
+        display: flex; /* Usa flexbox para los artículos */
+        flex-direction: column; /* Dirección de los elementos en columna */
+        gap: 10px; /* Espacio entre los elementos */
+        width: 280px; /* Ancho máximo */
+        text-align: left; /* Alinea el texto al centro */
+        background:  #151B2E; /* Fondo oscuro */
+        padding: 20px; /* Espaciado interno */
+        border-radius: 15px; /* Bordes redondeados */
+        border: 1px solid #1f242f; /* Borde gris */
+
+        span {
+            color: #6C5CE7; /* Color del texto */
+            text-align: left; /* Alinea el texto al centro */
+        }
+
+        h3 {
+            font-size: 1.5rem; /* Tamaño de fuente */
+            color: #ffffff; /* Color del texto */
+            margin-bottom: 10px; /* Espaciado inferior */
+            text-align: left; /* Alinea el texto al centro */
+            }
+
+        p {
+            font-size: 1rem; /* Tamaño de fuente */
+            color: #9AA4BF; /* Color del texto */
+            text-align: left; /* Alinea el texto al centro */
+            }
+
+        &:hover {
+        transform: scale(1.05) translateY(-25px); /* Aumenta el tamaño al pasar el mouse */
+        transition: transform 1s ease, border 1s ease; /* Transición suave para la transformación */
+        border: 1px solid #6C5CE7; /* Borde azul al pasar el mouse */
+        }
+    }
+
+    
+}
+
+.features-footer {
+    border-top: 1px solid #1f242f; /* Borde superior */
+    padding: 40px 0px 0px; /* Espaciado interno */
+    display: flex; /* Usa flexbox para los artículos */
+    flex-direction: row; /* Dirección de los elementos en columna */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    gap: 40px; /* Espacio entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea */
+    color: #9AA4BF; /* color de texto gris */
+}
+
+@media (max-width: 808px) {
+    header {
+        nav {
+            display: none; /* Oculta la barra de navegación en pantallas pequeñas */
+        }
+    }
+
+    .btn-burger {
+        display: flex; /* Muestra el botón de hamburguesa en pantallas pequeñas */
+        flex-direction: column; /* Dirección de los elementos en columna */
+        align-items: center; /* Alinea los elementos al centro */
+        justify-content: center; /* Centra los elementos verticalmente */
+        gap: 7px; /* Espacio entre las líneas del botón */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    }
+}
+
+@media (max-width: 649px) {
+    .hero-section {
+        .checklist {
+            display: none; /* Oculta la lista de verificación en pantallas pequeñas */
+        }
+    }
+}
+
+
+@media (max-width: 550px) {
+    header {
+        img.logo {
+            width: 150px; /* Ajusta la altura del logo */
+        }
+       
+    }
+
+     .btn-emphasys,
+     .btn-secondary {
+            padding: 10px 20px; /* Ajusta el espaciado interno de los botones */
+            font-size: 1rem; /* Ajusta el tamaño de fuente de los botones */
+        }
+    
+    
+    .hero-section {
+        
+        h1 {
+            font-size: 2rem; /* Ajusta el tamaño de fuente del título */
+        }
+
+        p {
+            font-size: 1rem; /* Ajusta el tamaño de fuente del párrafo */
+        }
+
+    }
+
+    .metrics-section {
+        .metric {
+            strong {
+                font-size: 1.5rem; /* Ajusta el tamaño de fuente del texto en negrita */
+            }
+
+            span {
+                font-size: 0.9rem; /* Ajusta el tamaño de fuente del texto */
+            }
+        }
+    }
+
+    .features-footer {
+            justify-content: center; /* Centra el contenido del pie de página */
+
+            small:last-child {
+                text-align: center; /* Alinea el texto al centro */
+            }
+
+        }
+}
